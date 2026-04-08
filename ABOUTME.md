@@ -47,6 +47,6 @@ essencial-odonto-main/
 - **Endereço:** Alameda Vieira de Carvalho, 424 — Santa Teresinha, Santo André, SP
 - **WhatsApp:** (11) 99502-0445
 - **Instagram:** @essencialodonto
-- **E-mail:** adm.essencialodonto@gmail.com
+- **E-mail:** comercial.essencialodonto@gmail.com
 - **Fundação:** 2018
 - **Deploy:** Netlify
