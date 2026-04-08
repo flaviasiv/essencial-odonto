@@ -342,7 +342,7 @@ h1, h2, h3, h4,
 }
 .gallery-swiper swiper-slide img {
   width: 100%;
-  height: 380px;
+  height: 500px;
   object-fit: cover;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -393,6 +393,8 @@ h1, h2, h3, h4,
 @media (max-width: 780px) {
   .sobre-inner { flex-direction: column; }
   .sobre-img { width: 100%; max-width: 380px; margin: auto; }
+.gallery-swiper swiper-slide img {
+  height: 300px;}
 }
 
 /* ── VALORES ────────────────────────────── */
