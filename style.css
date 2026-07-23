@@ -46,7 +46,7 @@
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: var(--nav-h); }
 body { font-family: var(--font-main); color: var(--text); background: var(--white); }
-img  { display: block; max-width: 100%; }
+img  { display: block; max-width: 100%; width: auto; height: auto; }
 a    { text-decoration: none; color: inherit; }
 ul   { list-style: none; }
 

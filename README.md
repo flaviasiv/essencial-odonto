@@ -16,6 +16,8 @@ Landing page completa e responsiva para clínica odontológica, com foco em conv
 - [Elfsight](https://elfsight.com/) — widget de avaliações Google
 - Netlify Forms — formulário de contato sem backend
 - JSON-LD (Schema.org `Dentist`) — SEO estruturado
+- Google Analytics 4 (gtag.js) — tracking de tráfego
+- `robots.txt` + `sitemap.xml` — indexação em buscadores
 
 ## Estrutura
 
@@ -24,6 +26,8 @@ essencial-odonto-main/
 ├── index.html        # Página principal
 ├── style.css         # Estilos globais
 ├── javascript.js     # Scripts auxiliares
+├── robots.txt        # Regras de rastreamento
+├── sitemap.xml        # Mapa do site para buscadores
 └── assets/           # Imagens, logos e slider
 ```
 
@@ -50,3 +54,21 @@ essencial-odonto-main/
 - **E-mail:** comercial.essencialodonto@gmail.com
 - **Fundação:** 2018
 - **Deploy:** Netlify
+
+## SEO e tracking
+
+**Domínio de produção:** `https://clinicaessencialodonto.com.br/` — usado no `canonical`, Open Graph, JSON-LD, `robots.txt` e `sitemap.xml`. Se o domínio mudar, atualize essas referências.
+
+### Ativar o Google Analytics 4
+O `gtag.js` já está no `<head>` do `index.html`, mas com um Measurement ID placeholder (`G-XXXXXXXXXX`):
+1. Crie uma propriedade GA4 em [analytics.google.com](https://analytics.google.com/).
+2. Copie o Measurement ID (formato `G-XXXXXXXXXX`).
+3. Substitua as duas ocorrências de `G-XXXXXXXXXX` em `index.html` (no `src` do script e no `gtag('config', ...)`).
+
+### Google Search Console
+1. Adicione a propriedade `https://clinicaessencialodonto.com.br/` em [search.google.com/search-console](https://search.google.com/search-console).
+2. Verifique a propriedade (recomendado: via DNS ou pela tag HTML — se optar pela tag HTML, adicione a meta de verificação no `<head>` do `index.html`).
+3. Submeta `https://clinicaessencialodonto.com.br/sitemap.xml` na seção "Sitemaps".
+
+### Imagem de compartilhamento (Open Graph)
+Hoje o `og:image`/`twitter:image` reaproveita `assets/hero-img.png`. O ideal é substituir por uma imagem dedicada de 1200×630px (logo + slogan) para ficar nítida nos previews do WhatsApp, Instagram e Facebook.
