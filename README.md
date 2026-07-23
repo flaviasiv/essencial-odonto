@@ -44,7 +44,7 @@ essencial-odonto-main/
 
 ## Informações da clínica
 
-- **Endereço:** Alameda Vieira de Carvalho, 424 — Santa Teresinha, Santo André, SP
+- **Endereço:** Av. Dom Pedro II, 1300 — Jardim, Santo André, SP — CEP 09080-000
 - **WhatsApp:** (11) 99502-0445
 - **Instagram:** @essencialodonto
 - **E-mail:** comercial.essencialodonto@gmail.com
